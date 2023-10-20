@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wizardstyles.css">
+    <title>Multi-Step Form Wizard</title>
+</head>
+<body>
+    <div class="container">
+        <div class="tab-status">
+          <div class="tab active">Welcome</div>
+          <div class="tab">Address</div>
+          <div class="tab">Preference</div>
+          <div class="tab">Submit</div>
+        </div>
+        <form action="#">
+          <div role="tab-list">
+            <div role="tabpanel" id="color" class="tabpanel">
+              <div class="tabgrid">
+                <div>
+                  <center><h1 style="color: #6366f1; padding-top: 40px;">Welcome!</h1></center>
+                  <center><p style="color: #6366f1;">Get started in 2 minutes!</p></center>
+                </div>
+                <div class="a">
+                  <label for="cheese">Name</label><br>
+                  <input type="text" name="cheese" id="cheese"/><br><br>
+                  <label for="email">Email</label><br>
+                  <input type="email" name="email" id="email"/><br><br>
+                  <label for="Phone">Phone</label><br>
+                  <input type="tel" name="Phone" id="Phone"/><br><br><br><br>
+                </div>
+              </div>
+            </div>
+
+            <div role="tabpanel" id="hobbies" class="tabpanel hidden">
+              <div class="tab2">
+                <h3 style="margin-bottom: 0; margin-top: 3px;">Address</h3>
+                <input name="hobbies" class="form-input"></input>
+                <h3 style="margin-bottom: 0;">City</h3>
+                <input name="hobbies" class="form-input"></input>
+                <h3 style="margin-bottom: 0;">State</h3>
+                <input name="hobbies" class="form-input"></input>
+                <h3 style="margin-bottom: 0;">Zip</h3>
+                <input name="hobbies" class="form-input"></input><br><br>
+              </div> 
+            </div>
+
+            <div role="tabpanel" id="occupation" class="tabpanel hidden">
+              <h3 style="padding-left: 30px;">Communication Preference</h3><br>
+              <div class="communication">
+                <div class="square">Email</div>
+                <div class="square">Phone</div>
+                <div class="square">Mail</div><br><br><br><br>
+              </div>
+            </div>
+
+
+           
+
+          <div role="tabpanel" id="occupation" class="tabpanel hidden">
+            <div class="last"  name="occupation">
+              <div style="margin-right: 10px;margin-top: 50px;">
+                <p>By signing here, you acknowledge that you have read and agree to the Terms and Conditions of this Enrollment Agreement. Please sign your legal name to continue with this enrollment.</p>
+              </div>
+              <div>
+                <h3>Signature</h3>
+
+               <textarea name="occupation" class="form-input" placeholder="write..."></textarea>
+                <div class="clear">Clear</div>
+              </div>
+          </div>
+          </div>
+
+
+          </div>
+            <div class="pagination">
+              <a class="btn hidden" id="prev">Previous</a>
+              <a class="btn" id="next">Continue</a>
+              <button class="btn btn-submit hidden" id="submit">Get Started!</button>
+            </div>
+          </form>
+      </div>
+
+    <script src="wizardscript.js"></script>
+</body>
+</html>
